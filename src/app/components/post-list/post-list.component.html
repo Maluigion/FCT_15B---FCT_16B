@@ -2,5 +2,5 @@
  [itemDate]="postDate">
 </app-post-list-item> -->
 
-<app-post-list-item *ngFor="let post of listPosts" [itemTitle]='post.title' [itemContent]="post.content" [itemLikes]="post.loveIts"
-[itemDate]="post.created_at" ></app-post-list-item>
+<app-post-list-item *ngFor="let post of listPosts; let i = index" [itemTitle]='post.title' [itemContent]="post.content" [itemLikes]="post.loveIts"
+[itemDate]="post.created_at" [index]="i" ></app-post-list-item>

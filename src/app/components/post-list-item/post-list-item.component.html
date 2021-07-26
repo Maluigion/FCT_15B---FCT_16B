@@ -5,6 +5,7 @@
     <p>Contenu : {{itemContent}}</p>
     <p>Nombre de Likes : {{itemLikes}}</p>
     <p>Date: {{itemDate | date: 'short'}}</p>
-    <button class="btn btn-success" (click)='onLike()'>Like</button>
-    <button class="btn btn-danger" (click)='onDislike()'>Dislike</button>
+    <button class="btn btn-danger" (click)='onDislike(index)'>Dislike</button>
+    <button class="btn btn-success" (click)='onLike(index)'>Like</button>
+    <button class="btn btn-warning pull-right" (click)='onDelete(index)'>Delete</button>
 </li>

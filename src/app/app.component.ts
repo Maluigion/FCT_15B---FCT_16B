@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { Post } from './Post';
+import { Component, OnInit } from '@angular/core';
+import { PostService } from './services/post.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,26 +9,8 @@ import { Post } from './Post';
 })
 export class AppComponent {
 
-  posts:Post[] = [
-    {
-      title: "mon premier post !",
-      content: 'youhouuuuuu',
-      loveIts: 10,
-      created_at: new Date()
-    },
-    {
-      title: "mon deuxième post !",
-      content: 'hehehehehehe',
-      loveIts: 36,
-      created_at: new Date()
-    },
-    {
-      title: "mon dernier post !",
-      content: 'snif',
-      loveIts: 1,
-      created_at: new Date()
-    }
-  ]
+constructor() {}
 
-  title = 'blog-openclassroom-angular';
+
+
 }
